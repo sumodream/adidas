@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="cache-control" content="no-cache">
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<title></title>
+</head>
+	<style id="slide"></style>
+<body style="overflow: hidden;">
+	<!-- 预加载 -->
+	<div id="loading" style="display:none;">
+		<img src="img/loading.gif" style="width:300px;height:140px;position: absolute;top:40px;left:50%;margin-left: -150px">
+		<div id="percentWrap" >0%</div>
+	</div>
+	<!-- 预加载  end -->
+	<!-- 手机竖屏提醒 -->
+	<div id="orientLayer" class="mod-orient-layer">
+		<div class="mod-orient-layer__content"> <i class="icon-wx mod-orient-layer__icon-orient"></i>
+			<div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+		</div>
+	</div>
+	<!-- 手机竖屏提醒  end -->
+	<!-- 页面内容-->
+	<div id="container" class="container">
+		<div class="scene1">
+			<ul id="scene" class="scene">
+				<li class="layer" data-depth="1.00">
+					<img src="img/1.png"></li>
+				<li class="layer pt-page-scale4 pt-page-delay600 chain" data-depth="0.90">
+					<img src="img/chain1.png"></li>
+				<li class="layer pt-page-scale4 pt-page-delay300 chain" data-depth="0.90">
+					<img src="img/chain2.png"></li>
+				<li class="layer pt-page-scale4 pt-page-delay200 chain" data-depth="0.90">
+					<img src="img/chain3.png"></li>
+				<li class="layer pt-page-scale4 pt-page-delay500 chain" data-depth="0.90">
+					<img src="img/chain4.png"></li>
+				<li class="layer pt-page-scale4 pt-page-delay400 chain" data-depth="0.90">
+					<img src="img/chain5.png"></li>
+				<li class="layer pt-page-scale4 pt-page-delay100 chain" data-depth="0.90">
+					<img src="img/chain6.png"></li>
+				<li class="layer pt-page-scale1" data-depth="0.80">
+					<img src="img/2.png"></li>
+				<li class="layer pt-page-moveToLeftEasing pt-page-delay900 chain" data-depth="0.70">
+					<img src="img/6.png"></li>
+				<li class="layer pt-page-moveToRightEasing pt-page-delay900 chain" data-depth="0.70">
+					<img src="img/7.png"></li>
+				<li class="layer pt-page-scale3 pt-page-delay800 chain" data-depth="0.60">
+					<img src="img/3.png"></li>
+				<li class="layer pt-page-scale2 pt-page-delay700 chain" data-depth="0.50">
+					<img src="img/4.png"></li>
+				<li class="layer pt-page-delay600 chain" data-depth="0.40">
+					<img src="img/9.png"></li>
+				<li class="layer pt-page-delay600 chain" data-depth="0.30">
+					<img src="img/10.png"></li>
+				<li class="layer pt-page-delay600 chain" data-depth="0.20">
+					<div class="btn"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="scene2" style="display:none">
+			<ul id="scene2" class="scene2">
+				<li class="layer " data-depth="1.00">
+					<div class="layerp21">
+						<img src="img/p2.png"></div>
+				</li>
+				<li class="layer" data-depth="0.90">
+					<div class="layerp22">
+						<img src="img/p2down.png"></div>
+				</li>
+				<li class="layer" data-depth="0.80">
+					<div class="layerp23">
+						<img src="img/p2chain.png"></div>
+				</li>
+				<li class="layer" data-depth="0.70">
+					<div class="layerp24 shoehide">
+						<img src="img/p2shoe.png"></div>
+				</li>
+				<li class="layer " data-depth="0.60">
+					<div class="layerp25 shoehide">
+						<img src="img/p2tip.png"></div>
+				</li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50"></li>
+				<li class="layer" data-depth="0.50">
+					<div class="shoe1 shoehide"></div>
+				</li>
+				<li class="layer" data-depth="0.50">
+					<div class="shoe2 shoehide"></div>
+				</li>
+				<li class="layer" data-depth="0.50">
+					<div class="shoe3 shoehide"></div>
+				</li>
+				<li class="layer" data-depth="0.50">
+					<div class="shoe4 shoehide"></div>
+				</li>
+				<li class="layer" data-depth="0.50">
+					<div class="tip shoehide"></div>
+				</li>
+				<li class="layer 2shoe2" data-depth="0.40">
+					<div class="2shoe2">
+						<img src="img/2shoe2.png"></div>
+				</li>
+				<li class="layer 2shoe2" data-depth="0.40">
+					<div class="pt-page-dot dot1">
+						<img src="img/dot.png"></div>
+				</li>
+				<li class="layer 2shoe2" data-depth="0.40">
+					<div class="pt-page-dot 2shoe2">
+						<img src="img/dot.png"></div>
+				</li>
+				<li class="layer 2shoe2" data-depth="0.40">
+					<div class="pt-page-dot">
+						<img src="img/dot.png"></div>
+				</li>
+				<li class="layer 2shoe2" data-depth="0.50">
+					<div class="back"></div>
+				</li>
+
+				<li class="layer 2shoe21" data-depth="0.50">
+					<div class="zz"></div>
+				</li>
+				<li class="layer 2shoe21" data-depth="0.40">
+					<div class="p2shoe21">
+						<img src="img/p2shoe21.png"></div>
+				</li>
+				<li class="layer 2shoe21" data-depth="0.50">
+					<div class="close"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/pxloader-all.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script type="text/javascript">
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	var scene2 = document.getElementById('scene2');
+    var parallax = new Parallax(scene2);
+</script>
+	<script>
+				var arrya = [
+							"1.png",
+							"2.png",
+							"3.png",
+							"4.png",
+							"6.png",
+							"7.png",
+							"9.png",
+							"10.png",
+							"chain1.png",
+							"chain2.png",
+							"chain3.png",
+							"chain4.png",
+							"chain5.png",
+							"chain6.png",
+							"p2.png",
+							"p2down.png",
+							"p2chain.png",
+							"p2shoe.png",
+							"p2tip.png",
+							"2shoe2.png",
+							"dot.png",
+							"p2shoe21.png"
+					];
+					var arryb = [
+						"loading.gif"
+					];
+					var baseUrl = 'img/',  
+					    loader = new PxLoader(); 
+					var loaderFile = new PxLoader();
+				 	for(var i=0; i < arrya.length; i++) { 
+					        var imageUrl = baseUrl + arrya[i]; 
+				            pxImage = new PxLoaderImage(imageUrl); 
+					        pxImage.imageNumber = i + 1; 
+					        loaderFile.add(pxImage); 
+					    }; 
+				    for(var i=0; i < arryb.length; i++) { 
+				        var imageUrl = baseUrl + arryb[i]; 
+			            pxImage = new PxLoaderImage(imageUrl); 
+				        pxImage.imageNumber = i + 1; 
+				        loader.add(pxImage); 
+				    }; 
+					loader.start(); 
+					loaderFile.addProgressListener(function(e){
+						var percent = Math.round((e.completedCount / e.totalCount) * 100);
+						$("#percentWrap").html(percent + "%");
+					});
+					loaderFile.addCompletionListener(function(e) {
+			    		$("#loading").remove();
+						$("#container").css("display", "block");
+					});
+			    	loader.addCompletionListener(function(e) {
+			    		$("#loading").show();
+			    		loaderFile.start();
+					});
+			    	loader.addProgressListener(function(e){
+					});
+	</script>
+</html>
